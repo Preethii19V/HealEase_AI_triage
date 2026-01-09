@@ -1,9 +1,37 @@
 # HealEase_AI_triage
 HealEase is a smart and empathetic web application that helps users quickly understand their symptoms and receive safe care guidance. It combines a rule‑based triage engine with an AI agent to provide urgency levels (Self‑care, Telehealth, Clinic, ER) and conversational explanations that reassure patients and suggest practical next steps.
-# HealEase — AI‑Powered Healthcare Triage Assistant
+## HealEase — AI‑Powered Healthcare Triage Assistant
 
  HealEase helps users quickly understand their symptoms and get safe care guidance.  
 It combines a rule‑based triage engine with an empathetic AI agent, delivering urgency levels (Self‑care, Telehealth, Clinic, ER) and conversational explanations.
+
+
+---
+## Problem Statement
+
+Many people delay medical care or panic unnecessarily due to a lack of clarity about symptom severity.  
+Minor issues are often overtreated, while serious conditions may be ignored.
+
+HealEase aims to reduce this gap by:
+- Evaluating symptoms safely
+- Detecting emergency red flags
+- Providing calm, empathetic explanations
+- Guiding users toward the right care option
+
+---
+## Solution Overview
+
+HealEase classifies symptoms into four urgency levels:
+
+- 🟢 **Self-Care**
+- 🟡 **Telehealth Consultation**
+- 🟠 **Clinic Visit**
+- 🔴 **Emergency Room (ER)**
+
+Each result includes:
+- Clear reasoning
+- Safety guidance
+- AI-generated empathetic explanations
 
 ---
 
