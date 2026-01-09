@@ -1,0 +1,58 @@
+body {
+  font-family: 'Nunito', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+.brand { letter-spacing: 0.5px; }
+
+.status-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #e74c3c; /* default red */
+  box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+  animation: pulse 2s infinite;
+}
+
+.logo-bounce .heart, .logo-bounce .stetho {
+  display: inline-block;
+  animation: bounce 1.8s infinite;
+}
+
+.bounce-btn {
+  animation: bounce 2s infinite;
+}
+
+.result-card { border-left: 6px solid #2ecc71; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.result-card.show { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,0.08); }
+
+.result-card.green { border-left-color: #2ecc71; }
+.result-card.yellow { border-left-color: #f1c40f; }
+.result-card.orange { border-left-color: #e67e22; }
+.result-card.red { border-left-color: #e74c3c; }
+
+.agent-bubble {
+  background: #f8fbff;
+  border: 1px solid #dbeafe;
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(46, 204, 113, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(46, 204, 113, 0); }
+}
+
+/* Step visibility */
+.step { display: none; }
+.step.active { display: block; }
+
+/* Checkbox grid */
+#symptom-list label, #redflag-list label {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 8px 10px; margin: 4px; border: 1px solid #eee; border-radius: 8px;
+  background: #fff; cursor: pointer;
+}
